@@ -2,7 +2,8 @@
 <configuration debug="true">
 
     <property resource="commons.properties"/>
-    <property file="/opt/cordys/conf/cordys-crm.properties" ignoreResourceNotFound="true"/>
+    <!-- 生产环境配置文件，开发环境可以注释掉避免警告 -->
+    <!-- <property file="/opt/cordys/conf/cordys-crm.properties" ignoreResourceNotFound="true"/> -->
 
     <!-- Console 输出 -->
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
